@@ -96,11 +96,11 @@ def mkvirtualenv():
 def put_confs():
     #sudo('rm /etc/nginx/sites-enabled/default')
     # nginx
-    put(local_path='./config/environments/{environment}/beer-nginx'.format(environment=env.environment_class), remote_path='/etc/nginx/sites-enabled/', use_glob=False, use_sudo=True)
+    put(local_path='./config/environments/{environment}/hive-empire-landing-page-nginx'.format(environment=env.environment_class), remote_path='/etc/nginx/sites-enabled/', use_glob=False, use_sudo=True)
     # supervisord
-    put(local_path='./config/environments/{environment}/beer.conf'.format(environment=env.environment_class), remote_path='/etc/supervisor/conf.d/', use_glob=False, use_sudo=True)
+    #put(local_path='./config/environments/{environment}/beer.conf'.format(environment=env.environment_class), remote_path='/etc/supervisor/conf.d/', use_glob=False, use_sudo=True)
     # uwsgi
-    put(local_path='./config/environments/{environment}/beer.ini'.format(environment=env.environment_class), remote_path='/etc/uwsgi/apps-enabled/', use_glob=False, use_sudo=True)
+    #put(local_path='./config/environments/{environment}/beer.ini'.format(environment=env.environment_class), remote_path='/etc/uwsgi/apps-enabled/', use_glob=False, use_sudo=True)
 
 
 @task
@@ -597,10 +597,10 @@ def deploy(is_predeploy='False',full='False',db='False',search='False'):
     #paths()
     put_confs()
 
-    requirements()
+    #requirements()
 
     relink()
-    update_env_conf()
-    assets()
-    clean_start()
+    #update_env_conf()
+    #assets()
+    #clean_start()
     #crontabs()
