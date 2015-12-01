@@ -2,27 +2,22 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to the HiveEmpire Documentation\n\n\nThank you for purchasing your HiveEmpire-Sense and we look forward to helping you get started\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Welcome to the HiveEmpire Documentation\n\n\nThank you for purchasing your HiveEmpire-Sense and we look forward to helping you get started\n\n\nPlease start reading by clicking Next below", 
             "title": "Home"
         }, 
         {
             "location": "/#welcome-to-the-hiveempire-documentation", 
-            "text": "Thank you for purchasing your HiveEmpire-Sense and we look forward to helping you get started", 
+            "text": "Thank you for purchasing your HiveEmpire-Sense and we look forward to helping you get started  Please start reading by clicking Next below", 
             "title": "Welcome to the HiveEmpire Documentation"
         }, 
         {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
-        }, 
-        {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
-        }, 
-        {
             "location": "/about/", 
-            "text": "", 
+            "text": "About\n\n\nSome info here\n\n\nKeep reading dennis", 
+            "title": "About"
+        }, 
+        {
+            "location": "/about/#about", 
+            "text": "Some info here  Keep reading dennis", 
             "title": "About"
         }, 
         {
