@@ -1,0 +1,9 @@
+site_name: HiveEmpire Documentation
+
+pages:
+- Home: index.md
+- About: about.md
+- Getting Started: new-sense-setup.md
+- Add extra Sensors: new-sensors-setup.md
+
+theme: readthedocs
