@@ -1,0 +1,59 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to the HiveEmpire Documentation\n\n\nThank you for purchasing your HiveEmpire-Sense and we look forward to helping you get started\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-the-hiveempire-documentation", 
+            "text": "Thank you for purchasing your HiveEmpire-Sense and we look forward to helping you get started", 
+            "title": "Welcome to the HiveEmpire Documentation"
+        }, 
+        {
+            "location": "/#commands", 
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
+            "title": "Commands"
+        }, 
+        {
+            "location": "/#project-layout", 
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "title": "Project layout"
+        }, 
+        {
+            "location": "/about/", 
+            "text": "", 
+            "title": "About"
+        }, 
+        {
+            "location": "/new-sense-setup/", 
+            "text": "Getting Started with a new HiveEmpire-Sense\n\n\nThe Sense is a sensor receiver that connects your hive sensors with the HiveEmpire application.\n\n\nAt the location of your hive\n\n\n\n\nPlace the HiveEmpire-Sense within 100 meters of your hive.\n\n\nConnect the HiveEmpire-Sense to a power-supply.\n\n\nConnect the HiveEmpire-Sense to the internet via the cat5 cable connection (Wireless pending)\n\n\nThe \"internet connected\" led should be green.\n\n\nThe \"sensors connected\" led should be green, if you have placed your sensors within 100 meters of the device.\n\n\n\n\nAt Hive-Empire.com\n\n\n\n\nLogin to http://hive-empire.com\n\n\nCreate a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)\n\n\nCreate a new Hive\n\n\nAssociate the Hive with the HiveEmpire-Sense device via the \"Devices\" field.\n\n\nLook at the Hive Dashboard you should now be getting data", 
+            "title": "Getting Started"
+        }, 
+        {
+            "location": "/new-sense-setup/#getting-started-with-a-new-hiveempire-sense", 
+            "text": "The Sense is a sensor receiver that connects your hive sensors with the HiveEmpire application.", 
+            "title": "Getting Started with a new HiveEmpire-Sense"
+        }, 
+        {
+            "location": "/new-sense-setup/#at-the-location-of-your-hive", 
+            "text": "Place the HiveEmpire-Sense within 100 meters of your hive.  Connect the HiveEmpire-Sense to a power-supply.  Connect the HiveEmpire-Sense to the internet via the cat5 cable connection (Wireless pending)  The \"internet connected\" led should be green.  The \"sensors connected\" led should be green, if you have placed your sensors within 100 meters of the device.", 
+            "title": "At the location of your hive"
+        }, 
+        {
+            "location": "/new-sense-setup/#at-hive-empirecom", 
+            "text": "Login to http://hive-empire.com  Create a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)  Create a new Hive  Associate the Hive with the HiveEmpire-Sense device via the \"Devices\" field.  Look at the Hive Dashboard you should now be getting data", 
+            "title": "At Hive-Empire.com"
+        }, 
+        {
+            "location": "/new-sensors-setup/", 
+            "text": "Add Sensors\n\n\n\n\nPlace the sensor in the hive as you see fit.\n\n\nLogin to HiveEmpire and go to \"sensors\"\n\n\nDrag the new sensors to the Hive you placed the sensor in (You may need to create a new hive entry first)\n\n\nThe sensor will now show on the Hive dashboard", 
+            "title": "Add extra Sensors"
+        }, 
+        {
+            "location": "/new-sensors-setup/#add-sensors", 
+            "text": "Place the sensor in the hive as you see fit.  Login to HiveEmpire and go to \"sensors\"  Drag the new sensors to the Hive you placed the sensor in (You may need to create a new hive entry first)  The sensor will now show on the Hive dashboard", 
+            "title": "Add Sensors"
+        }
+    ]
+}
