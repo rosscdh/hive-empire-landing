@@ -12,7 +12,7 @@ The Sense is a sensor receiver that connects your hive sensors with the HiveEmpi
 
 ## At Hive-Empire.com
 
-1. Login to http://hive-empire.com
+1. Login to http://app.hive-empire.com
 2. Create a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)
 3. Create a new Hive
 4. Associate the Hive with the HiveEmpire-Sense device via the "Devices" field.

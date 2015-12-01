@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/new-sense-setup/", 
-            "text": "Getting Started with a new HiveEmpire-Sense\n\n\nThe Sense is a sensor receiver that connects your hive sensors with the HiveEmpire application.\n\n\nAt the location of your hive\n\n\n\n\nPlace the HiveEmpire-Sense within 100 meters of your hive.\n\n\nConnect the HiveEmpire-Sense to a power-supply.\n\n\nConnect the HiveEmpire-Sense to the internet via the cat5 cable connection (Wireless pending)\n\n\nThe \"internet connected\" led should be green.\n\n\nThe \"sensors connected\" led should be green, if you have placed your sensors within 100 meters of the device.\n\n\n\n\nAt Hive-Empire.com\n\n\n\n\nLogin to http://hive-empire.com\n\n\nCreate a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)\n\n\nCreate a new Hive\n\n\nAssociate the Hive with the HiveEmpire-Sense device via the \"Devices\" field.\n\n\nLook at the Hive Dashboard you should now be getting data", 
+            "text": "Getting Started with a new HiveEmpire-Sense\n\n\nThe Sense is a sensor receiver that connects your hive sensors with the HiveEmpire application.\n\n\nAt the location of your hive\n\n\n\n\nPlace the HiveEmpire-Sense within 100 meters of your hive.\n\n\nConnect the HiveEmpire-Sense to a power-supply.\n\n\nConnect the HiveEmpire-Sense to the internet via the cat5 cable connection (Wireless pending)\n\n\nThe \"internet connected\" led should be green.\n\n\nThe \"sensors connected\" led should be green, if you have placed your sensors within 100 meters of the device.\n\n\n\n\nAt Hive-Empire.com\n\n\n\n\nLogin to http://app.hive-empire.com\n\n\nCreate a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)\n\n\nCreate a new Hive\n\n\nAssociate the Hive with the HiveEmpire-Sense device via the \"Devices\" field.\n\n\nLook at the Hive Dashboard you should now be getting data", 
             "title": "Getting Started"
         }, 
         {
@@ -37,7 +37,7 @@
         }, 
         {
             "location": "/new-sense-setup/#at-hive-empirecom", 
-            "text": "Login to http://hive-empire.com  Create a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)  Create a new Hive  Associate the Hive with the HiveEmpire-Sense device via the \"Devices\" field.  Look at the Hive Dashboard you should now be getting data", 
+            "text": "Login to http://app.hive-empire.com  Create a HiveEmpire-Sense object, you will be asked to enter your device serial (found on the side of the device)  Create a new Hive  Associate the Hive with the HiveEmpire-Sense device via the \"Devices\" field.  Look at the Hive Dashboard you should now be getting data", 
             "title": "At Hive-Empire.com"
         }, 
         {
