@@ -1,5 +1,8 @@
 site_name: HiveEmpire Documentation
-
+site_url: http://hive-empire.com
+google_analytics: ['UA-70859032-1', 'hive-empire.com']
+docs_dir: documentation
+site_dir: docs
 pages:
 - Home: index.md
 - About: about.md
