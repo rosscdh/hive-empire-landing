@@ -103,30 +103,15 @@
 
 	        				</div>
 
-	        				<div class="bottom">
+	        				<div id="container-contact-us-form" class="bottom">
 
-								<div id="success">
-								    <span class="green textcenter">
-								        <p>Your message was sent successfully!</p>
-								    </span>
-								</div>
-
-								<div id="error">
-								    <span>
-								        <p>Something went wrong. Please refresh and try again.</p>
-								    </span>
-								</div>
-
-								<form id="contact" name="contact" method="post" novalidate="novalidate">
+								<form id="contact" name="contact" data-action="http://comb-empire.com/send" method="POST" role="form" data-parsley-validate>
 
 									<div class="form-row">
-								        <input type="text" name="name" id="name" size="30" value="" required="" class="text login_input"  placeholder="Your name">
+								        <input type="text" name="from_name" id="name" size="30" value="" required="" class="text login_input"  placeholder="Your name">
 								    </div>
 									<div class="form-row">
-								        <input type="text" name="email" id="email" size="30" value="" required="" class="text login_input"  placeholder="Email Address">
-								    </div>
-									<div class="form-row">
-								        <input type="text" name="phone" id="phone" size="30" value="" class="text login_input"  placeholder="Phone Number (Optional)">
+								        <input type="text" name="from_email" id="email" size="30" value="" required="" class="text login_input"  placeholder="Email Address">
 								    </div>
 									<div class="form-row">
 								        <textarea name="message" id="message" required=""  placeholder="Message"></textarea>
@@ -459,7 +444,74 @@
 <script src="js/scripts.js"></script>
 <script src="js/jquery.form.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-<script src="js/contact.js"></script>
+<!-- <script src="js/contact.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.1.2/parsley.min.js"></script>
+
+<script id="tpl-contact-thank-you" type="text/x-handlebars-template">
+<div class="row">
+    <div class="well well-lg">
+        <div class="media feature">
+            <a class="pull-left" href="#">
+                <i class="fa fa-paper-plane-o fa-2x"></i>
+            </a>
+            <div class="media-body">
+                <h3 class="media-heading">Message Sent</h3>
+                Thanks <b>{{from_name}}</b>
+            </div>
+        </div>
+        <p>We appreciate you taking the time to send us your thoughts.</p>
+        <p>Regards,<br/><b>HiveEmpire</b></p>
+
+    </div>
+</div>
+</script>
+
+<script>
+	'use strict';
+	$(document).ready(function() {
+
+	    $('form#contact').on('submit', function ( event ) {
+	        event.preventDefault();
+	        var $form = $(this);
+	        var form_options = $(this).data();
+	        var form_data = {
+	            'subject': 'HiveEmpire - Registration of interest',
+	            'from_name': $('input[name=from_name]').val(),
+	            'from_email': $('input[name=from_email]').val(),
+	            'message': $('textarea[name=message]').val(),
+	        };
+	        $.ajax({
+	            data: JSON.stringify(form_data),
+	            dataType: 'json',
+	            contentType: "application/json",
+	            headers: {'X-App': 'hive-empire'},
+	            type: 'POST',
+	            url: form_options.action,
+	            beforeSend: function () {
+	                // disable the button
+	                $form.find('input[name=submit]').prop('disabled', true);
+	                $form.find('input[type=submit]').prop('disabled', true);
+	            },
+	            error: function ( data ) {
+	                var payload = data.responseJSON;
+	                // enable the button again
+	                $form.find('input[name=submit]').prop('disabled', false);
+	                $form.find('input[type=submit]').prop('disabled', false);
+	            },
+	            success: function ( data ) {
+	                //console.log(data)
+	                if ( data.status == 200 ) {
+	                    var source   = $("script#tpl-contact-thank-you").html();
+	                    var template = Handlebars.compile(source);
+	                    $('#container-contact-us-form').html(template(form_data));
+	                }
+	            }
+	        });
+	    });
+	});
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
