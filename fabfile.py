@@ -13,6 +13,8 @@ import getpass
 import requests
 from termcolor import colored
 
+sys.path.insert(0, '.')
+
 debug = True
 
 env.local_project_path = os.path.dirname(os.path.realpath(__file__))
