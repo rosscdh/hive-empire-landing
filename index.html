@@ -378,8 +378,7 @@
 						<li>1x Temperature &amp; Humidity Sensor</li>
 						<li>4x Weight Sensors</li>
 						</ul>
-
-						<a href="/" class="btn">Buy Now</a>
+						<span class="buy-now"><a href="#" class="btn buy-now">Buy Now</a></span>
 		    	</div>
 		  </div>
 
@@ -391,8 +390,7 @@
 						<li class="price"><h1><span>$ </span><strong>120</strong></h1></li>
 						<li>Power cable</li>
 						</ul>
-
-						<a href="/" class="btn">Buy Now</a>
+						<span class="buy-now"><a href="#" class="btn buy-now">Buy Now</a></span>
 
 		    	</div>
 		  </div>
@@ -405,7 +403,7 @@
 						<li>1x Temperature &amp; Humidity Sensor</li>
 						<li>4x Weight Sensors</li>
 						</ul>
-						<a href="/" class="btn">Buy Now</a>
+						<span class="buy-now"><a href="#" class="btn buy-now">Buy Now</a></span>
 		    	</div>
 		  </div>
 
@@ -419,7 +417,7 @@
 						<li>Coming soon</li>
 						<li class="price"><h1><span>$ </span><strong>80</strong><small></small></h1></li>
 						</ul>
-						<a href="/" class="btn">Buy Now</a>
+						<span class="buy-now"><a href="#" class="btn buy-now">Buy Now</a></span>
 		    	</div>
 		  </div>
 
@@ -431,7 +429,7 @@
 						<li>Coming soon</li>
 						<li class="price"><h1><span>$ </span><strong>80</strong><small></small></h1></li>
 						</ul>
-						<a href="/" class="btn">Buy Now</a>
+						<span class="buy-now"><a href="#" class="btn buy-now">Buy Now</a></span>
 		    	</div>
 		  </div>
 
@@ -475,6 +473,26 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.1.2/parsley.min.js"></script>
+
+<script id="tpl-thanks-for-interest" type="text/x-handlebars-template">
+<div class="row">
+    <div class="well well-lg">
+        <div class="media feature">
+            <a class="pull-left" href="#">
+                <i class="fa fa-paper-plane-o fa-2x"></i>
+            </a>
+            <div class="media-body">
+                <h3 class="media-heading">Thanks for your interest</h3>
+            </div>
+        </div>
+        <p>We appreciate your interest in HiveEmpire.</p>
+        <p>We are currently hard at work producing our v2 product and sensor set.</p>
+        <p>PLease drop us a line to express your interest and ask any questions you may have.</p>
+        <p>Regards,<br/><b>HiveEmpire</b></p>
+
+    </div>
+</div>
+</script>
 
 <script id="tpl-contact-thank-you" type="text/x-handlebars-template">
 <div class="row">
@@ -536,6 +554,13 @@
 	                }
 	            }
 	        });
+	    });
+
+	    $('a.buy-now').on('click', function ( event ) {
+	        event.preventDefault();
+	        var source   = $("script#tpl-thanks-for-interest").html();
+          var template = Handlebars.compile(source);
+          $($(this).closest('span.buy-now')).html(template({}));
 	    });
 	});
 </script>
