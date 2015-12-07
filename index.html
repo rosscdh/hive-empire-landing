@@ -561,6 +561,7 @@
 	        var source   = $("script#tpl-thanks-for-interest").html();
           var template = Handlebars.compile(source);
           $($(this).closest('span.buy-now')).html(template({}));
+          ga('send', 'event', 'Products', 'buy', 'Clicked Buy Now');
 	    });
 	});
 </script>
