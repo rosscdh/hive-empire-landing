@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /docs
+Allow: /sitemap*.xml*$
+Sitemap: http://hive-empire.com/sitemap.xml.gz

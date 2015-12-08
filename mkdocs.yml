@@ -5,7 +5,6 @@ docs_dir: documentation
 site_dir: docs
 pages:
 - Home: index.md
-- About: about.md
 - Getting Started: new-sense-setup.md
 - Add extra Sensors: new-sensors-setup.md
 
