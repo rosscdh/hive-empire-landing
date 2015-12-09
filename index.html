@@ -716,7 +716,7 @@
 
 	    $('[data-ga-event]').on('click', function ( event ) {
 	        event.preventDefault();
-	        data = $(this).data();
+	        var data = $(this).data();
 					ga('send', {
 					  'hitType': 'event',          // Required.
 					  'eventCategory': data.group,   // Required.
