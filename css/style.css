@@ -572,11 +572,11 @@
 		padding:0;
 		margin:2em 0 0;
 		background:#f9f9f9;
-		border: solid 1px rgba(0, 0, 0, 0.5);
-  		-moz-box-shadow:    0 0 2px 2px rgba(0, 0, 0, 0.1);
+		border: solid 1px #ccc;
+/*  		-moz-box-shadow:    0 0 2px 2px rgba(0, 0, 0, 0.1);
   		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
   		box-shadow:         0 0 2px 2px rgba(0, 0, 0, 0.1);
-  		color:#666;
+  		color:#666;*/
   		display: none
 	}
 
@@ -584,6 +584,10 @@
 		background:#fff;
 		padding:1.5em;
 		border-bottom: solid 1px #dce2e5;
+	}
+
+	.form-box .top p {
+		color:#222;
 	}
 
 	.form-box .top h1 {
