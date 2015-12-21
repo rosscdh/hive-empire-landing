@@ -44,7 +44,8 @@
 									<li class="current"><a href="/">Home</a></li>
 									<li><a data-ga-event="about" data-group="main-nav" data-description="Clicked about" href="/about.html">About</a></li>
 									<li><a data-ga-event="blog" data-group="main-nav" data-description="Clicked blog" href="https://hiveempireblog.wordpress.com">Blog</a></li>
-									<li><a data-ga-event="get-started" data-group="main-nav" data-description="Clicked get started" href="/docs/">Get Started</a></li>
+									<li><a data-ga-event="contact" data-group="main-nav" data-description="Clicked contact us" href="#contact-form">Contact Us</a></li>
+<!-- 									<li><a data-ga-event="get-started" data-group="main-nav" data-description="Clicked get started" href="/docs/">Get Started</a></li> -->
 									<li><a data-ga-event="newsletter" data-group="main-nav" data-description="Clicked newsletter" href="#mailchimp">Newsletter</a></li>
 									<li><a data-ga-event="survey" data-group="main-nav" data-description="Clicked survey" href="#survey">Survey</a></li>
 									<li><a data-ga-event="sign-up" data-group="main-nav" data-description="Clicked sign-up" href="http://app.hive-empire.com/sign-up.html">Sign Up</a></li>
@@ -164,7 +165,7 @@
 				<div class="row">
 					<div class="span6">
 
-						<div class="inner">
+						<div class="inner" id="contact-form">
 							<div class="form-box">
 								<div class="top">
 									<h2><span class="glyph-item  icon-pencil" aria-hidden="true"></span> Get in touch</h2>
@@ -454,7 +455,7 @@
 			</div>
 			<p>We appreciate your interest in HiveEmpire.</p>
 			<p>We are currently hard at work producing our v2 product &amp; sensor set.</p>
-			<p>Please drop us a line to express your interest &amp; ask any questions you may have.</p>
+			<p>Please <a data-ga-event="contact-us" data-group="sensors-in-planning" data-description="Interested in Buying" href="#contact-form">contact us</a> should you have any questions and we will be happy to respond.</p>
 			<p>Regards,<br/><b>HiveEmpire</b></p>
 		</div>
 	</div>
@@ -538,7 +539,7 @@
 						});
 		});
 		$('[data-ga-event]').on('click', function ( event ) {
-		event.preventDefault();
+		//event.preventDefault();
 		var data = $(this).data();
 						ga('send', {
 						'hitType': 'event',          // Required.
